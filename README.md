@@ -131,3 +131,18 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Bootstrap for the UI framework
 - Chart.js for analytics visualization
 - Font Awesome for icons 
+
+
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/3d5dfd37-bb77-47f1-accf-e3d0586159fa" />
+
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/3d73cc16-ca3e-40de-8fd9-3ac6616a28ad" />
+
+
+<img width="389" alt="image" src="https://github.com/user-attachments/assets/fe49dce3-2df5-4d2f-a33e-b0721ad23e09" />
+
+
+<img width="353" alt="image" src="https://github.com/user-attachments/assets/3ed015ff-6800-4310-8f76-a0fed2ceabe8" />
+
+
+
+
