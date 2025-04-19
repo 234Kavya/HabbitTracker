@@ -1,0 +1,153 @@
+/* General Layout */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+}
+
+.main-content {
+    flex: 1;
+    padding: 2rem 0;
+}
+
+/* Header Styling */
+.navbar {
+    padding: 1rem 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+/* Footer Styling */
+footer {
+    padding: 1rem 0;
+    background-color: #ffffff;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Calendar Styling */
+.calendar-view {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.calendar-day {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    font-size: 0.9rem;
+    border: 1px solid #dee2e6;
+    transition: all 0.2s ease;
+}
+
+.calendar-day:hover {
+    background-color: #e9ecef;
+}
+
+.calendar-day.today {
+    background-color: #e8f0fe;
+    border: 2px solid #0d6efd;
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+.calendar-day.completed {
+    background-color: #d4edda;
+    border-color: #28a745;
+}
+
+.calendar-day.completed::after {
+    content: '✓';
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    font-size: 0.7rem;
+    color: #28a745;
+}
+
+/* Habit Cards */
+.habit-card {
+    transition: transform 0.2s ease;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.habit-card:hover {
+    transform: translateY(-2px);
+}
+
+.high-priority {
+    border-left: 4px solid #dc3545;
+}
+
+.medium-priority {
+    border-left: 4px solid #ffc107;
+}
+
+.low-priority {
+    border-left: 4px solid #28a745;
+}
+
+/* Streak Badge */
+.streak-badge {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 0.25rem 0.5rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+}
+
+.streak-badge i {
+    color: #ffc107;
+    margin-right: 0.25rem;
+}
+
+/* Progress Bar */
+.progress {
+    height: 1.5rem;
+    background-color: #e9ecef;
+}
+
+.progress-bar {
+    background-color: #0d6efd;
+    transition: width 0.6s ease;
+}
+
+/* Custom Modal Styling */
+.modal-content {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .calendar-day {
+        font-size: 0.8rem;
+    }
+    
+    .habit-card {
+        margin-bottom: 1rem;
+    }
+} 
